@@ -1,0 +1,5 @@
+﻿.menulink{ color:#e0bed2; text-decoration:none; font-weight:bold; font-size:18px}
+.menulink:hover{ text-decoration:underline; font-weight:bold}
+.tableborder{border:solid 2px #f7028d; text-align:center; vertical-align:middle}
+.toptdback{ height:35px; background-color:#f7028d; color:#e3d7de; font-size:22px; text-align:center}
+.lefttext{ text-align:left; padding-left:30px; color:#f7028d }

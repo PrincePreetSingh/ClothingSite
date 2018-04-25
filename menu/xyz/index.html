@@ -1,0 +1,88 @@
+
+<html>
+<head>
+<title>Drop Down Menu Bar</title>
+<link rel="stylesheet" href="js/menu.css" type="text/css"/>
+
+</head>
+
+<body>
+<script language="JavaScript" src="js/menu.js" type=""></script>
+<script language="JavaScript" src="js/menu_items.js" type=""></script>
+<script language="JavaScript" src="js/menu_tpl.js" type=""></script>
+<script language="JavaScript" type=""> new menu (MENU_ITEMS, MENU_TPL); </script>
+
+<br />
+<center><h1>Demo of Drop Down Menu Bar</h1></center>
+<br />
+<br />
+<br />
+<br />
+ <asp:Menu ID="Menu1" runat="server" BackColor="#1A4D81" DynamicHorizontalOffset="2" 
+            Font-Names="Trebuchet MS" Font-Size="Small" ForeColor="#FFFFFF" Height="42px" 
+            Orientation="Horizontal" StaticSubMenuIndent="10px" Width="100%" 
+            Font-Bold="True" Font-Italic="False" Font-Overline="False" 
+            Font-Strikeout="False" Font-Underline="False" BorderColor="#336699" BorderStyle="Solid">
+      <StaticSelectedStyle BackColor="#007cc2" />
+      <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="0px" />
+      <DynamicHoverStyle BackColor="#5286BB" ForeColor="White" />
+      <DynamicMenuStyle BackColor="#2C5F93" />
+      <DynamicSelectedStyle BackColor="#FFCC66" />
+      <DynamicMenuItemStyle HorizontalPadding="6px" VerticalPadding="0px" />
+      <StaticHoverStyle BackColor="#1A4D81" ForeColor="White" />
+      <Items>
+          <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+          <asp:MenuItem Text="About Us" Value="About Us">
+              <asp:MenuItem Text="Mission &amp; Vision" Value="Mission &amp; Vision" NavigateUrl="~/vms.aspx"></asp:MenuItem>
+              <asp:MenuItem Text="Chief Grievances redressal Officer" Value="CGRF" NavigateUrl="~/cgro.aspx"></asp:MenuItem>
+          </asp:MenuItem>
+          <asp:MenuItem Text="Deposit Scheme" Value="Deposit Scheme">
+              <asp:MenuItem Text="Platinum Saving Deposit Account " Value="Platinum Saving Deposit Account" 
+                  NavigateUrl=" ">
+              </asp:MenuItem>
+              <asp:MenuItem Text="Double Deposit Scheme" Value="Double Deposit Scheme" 
+                  NavigateUrl=""></asp:MenuItem>
+              <asp:MenuItem Text="Saving Account" Value="Saving Account" 
+                  NavigateUrl="">
+              </asp:MenuItem>
+               <asp:MenuItem Text="Current Account" Value="Current Account" 
+                  NavigateUrl="">
+              </asp:MenuItem>
+          </asp:MenuItem>
+          <asp:MenuItem Text="Loan" Value="Loan" NavigateUrl=""></asp:MenuItem>
+          <asp:MenuItem Text="Services" Value="Services">
+           <asp:MenuItem Text="Financial Inclusion" Value="Financial Inclusion" NavigateUrl="~/FI.aspx"></asp:MenuItem>
+           <asp:MenuItem Text="Types of Accounts" Value="Types of Accounts">
+           <asp:MenuItem Text="Non-Residence External" Value="Non-Residence External" NavigateUrl="~/NRE.aspx"></asp:MenuItem>
+           <asp:MenuItem Text="Non-Residence Ordinary" Value="Non-Residence Ordinary" NavigateUrl="~/NRO.aspx"></asp:MenuItem>
+           <asp:MenuItem Text="Foreign Currency Non-Residence" Value="Foreign Currency Non-Residence" NavigateUrl="~/FCNR.aspx"></asp:MenuItem>
+           <asp:MenuItem Text="Non-Residence Foreign Currency" Value="Non-Residence Foreign Currency" NavigateUrl="~/NRFC.aspx"></asp:MenuItem>
+          </asp:MenuItem>
+           <asp:MenuItem Text="Representative Office - Dubai" Value="Representative Office - Dubai" NavigateUrl="~/rod.aspx"></asp:MenuItem>
+          </asp:MenuItem>
+           <asp:MenuItem Text="Customer Care" Value="Customer Care">
+            <asp:MenuItem Text="Contact Us" Value="Contact Us">
+             <asp:MenuItem Text="Principal Nodal Officer" Value="Principal Nodal Officer" NavigateUrl="~/pno.aspx"></asp:MenuItem>
+             <asp:MenuItem Text="Contact Center" Value="Contact Center" NavigateUrl="~/conc.aspx"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="Feedback" Value="Feedback">
+             <asp:MenuItem Text="Query and Suggestions" Value="Query and Suggestions" NavigateUrl="~/QandS.aspx"></asp:MenuItem>
+             <asp:MenuItem Text="Online with Tracking Facility" Value="Online with Tracking Facility" NavigateUrl="~/complate.aspx"></asp:MenuItem>
+            </asp:MenuItem>
+            </asp:MenuItem>
+          <asp:MenuItem Text="E-Banking" Value="E-Banking">
+           <asp:MenuItem Text="Skyee E-Banking" Value="Skyee E-Banking" NavigateUrl="SEB.aspx"></asp:MenuItem>
+           <asp:MenuItem Text="Delivery Channels" Value="Delivery Channels">
+            <asp:MenuItem Text="SMS Banking" Value="SMS Banking" NavigateUrl="sms.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Internet Banking" Value="Internet Banking" NavigateUrl="ib.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="ATM" Value="ATM" NavigateUrl="ATM.aspx"></asp:MenuItem>
+           </asp:MenuItem>
+           <asp:MenuItem Text="E-Payment" Value="E-Payment">
+            <asp:MenuItem Text="Collection of Direct Taxes" Value="Collection of Direct Taxes" NavigateUrl="DT.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Central Excise & Service Tax Payments" Value="Central Excise & Service Tax Payments" NavigateUrl="CEST.aspx"></asp:MenuItem>
+           </asp:MenuItem>
+          </asp:MenuItem>
+         </Items>
+        </asp:Menu>
+</body>
+</html>
